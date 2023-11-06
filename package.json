@@ -2,7 +2,7 @@
   "name": "mysql-in-nodejs",
   "version": "1.0.0",
   "description": "Sample code for connecting to mysql database in NodeJS",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
