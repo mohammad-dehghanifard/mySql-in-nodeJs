@@ -1,2 +1,2 @@
 const dotenv = require('dotenv').config();
-const dbConfig = require('./db_config');
+const db = require('./service/db_config');
