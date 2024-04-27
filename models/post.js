@@ -27,7 +27,7 @@ class Post {
     }
 
     static async getPostById(id) {
-        const query =  "SELECT * FROM posts WHERE id = ${id}"
+        const query =  `SELECT * from posts WHERE id = ${id}`
         const post = await  db.execute(query)
         return post
     }
