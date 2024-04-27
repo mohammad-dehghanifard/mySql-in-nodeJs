@@ -1,13 +1,12 @@
 const express = require('express')
 require("dotenv").config()
+const postRouter = require("./routes/post_routes")
 
 const app = express()
 
 app.use(express.json())
 
-app.use("/posts",(req,res) => {
-    return next("no impl...")
-})
+app.use("/posts",postRouter)
 
 app.use((req,res,err,next) =>{
     console.log(err)
