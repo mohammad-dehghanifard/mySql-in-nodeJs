@@ -19,6 +19,18 @@ class Post {
 
         return newPost;
     }
+
+    static async getAll() {
+        const query = "SELECT * FROM posts"
+        const postList = await db.execute(query)
+        return postList
+    }
+
+    static async getPostById(id) {
+        const query =  "SELECT * FROM posts WHERE id = ${id}"
+        const post = await  db.execute(query)
+        return post
+    }
 }
 
 module.exports = Post
